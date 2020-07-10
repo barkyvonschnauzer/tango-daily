@@ -44,7 +44,11 @@ def main():
 # Input: None.
 # Output: TBD
 #
-# Purpose: Connect to COSMOS DB and pull the two most recent records.
+# Purpose: Connect to COSMOS DB tango-results container and pull the 
+#          latest record.  This record will contain ***
+#          Connect to the COSMOS DB tango-submission and pull all of the
+#          records in the past 24 hours.  This set is used to determine
+#          the receipt and submission numbers.
 #
 ##########################################################################
 def get_records_from_cosmos():
