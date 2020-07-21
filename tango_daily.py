@@ -34,8 +34,6 @@ def main():
     for result in reporting_results:
         print (json.dumps(result, indent = True))
 
-    #netcraft_results = get__netcraft_results()
-
     store_stats(submission_results, reporting_results)
 
 ##########################################################################
@@ -167,19 +165,6 @@ def store_stats(submission_results, reporting_results):
                              'n_processing': n_processing,
                              'n_unavailable': n_unavailable,
                              'n_rejected': n_rejected })
-
-##########################################################################
-#
-# Function name: get_netcraft_results
-# Input: TBD
-# Output: TBD
-#
-# Purpose: connect to Netcraft and get all results in Karen Dummy area.
-#          These results will include redirects.
-#
-##########################################################################
-def get_netcraft_results():
-    print ("**** GET ALL NETCRAFT RESULTS ****")
 
 
 if __name__ == "__main__":
